@@ -1,7 +1,7 @@
 # Hardhat Hackathon Boilerplate
 
 This repository contains a sample project that you can use as the starting point
-for your Ethereum project. It's also a great fit for learning the basics of
+for your IOTA Smart Contracts EVM project. It's also a great fit for learning the basics of
 smart contract development.
 
 This project is intended to be used with the
@@ -15,7 +15,7 @@ The first things you need to do are cloning this repository and installing its
 dependencies:
 
 ```sh
-git clone https://github.com/nomiclabs/hardhat-hackathon-boilerplate.git
+git clone https://github.com/iota-community/hardhat-hackathon-boilerplate.git
 cd hardhat-hackathon-boilerplate
 npm install
 ```
@@ -33,6 +33,11 @@ deploy your contract:
 npx hardhat run scripts/deploy.js --network localhost
 ```
 
+To deploy it on the publc IOTA Smart Contracts EMV Tesnet, run this command:
+```sh
+npx hardhat run scripts/deploy.js --network iscp
+```
+
 Finally, we can run the frontend with:
 
 ```sh
@@ -48,6 +53,8 @@ npm start
 Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
 need to have [Metamask](https://metamask.io) installed and listening to
 `localhost 8545`.
+
+> Read the wiki entry to [learn how configure Metamask with the pubic IOTA Smart Contracts EVM Testnet](https://wiki.iota.org/wasp/guide/chains_and_nodes/testnet#interact-with-evm).
 
 ## User Guide
 
